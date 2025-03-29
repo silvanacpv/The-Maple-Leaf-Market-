@@ -1,0 +1,120 @@
+<!-- Home page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Icons/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Maple Leaf Market</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <header id="navbar">
+
+        <div class="top-bar">
+            <div class="logo-container">
+                <img src="Photos/logo.png" alt="The Maple Leaf Market Logo" class="logo">
+            </div>
+            <div class="auth-container">
+                <a href="#signin" class="sign-in">Sign In</a>
+            </div>
+        </div>
+        
+        
+        <div class="navlinks-container">
+            <div class="menu-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <p class="brand-name">Welcome to The Maple Leaf Market</p>
+            </div>
+            
+            <nav id="menu">
+                <button class="close-menu" onclick="toggleMenu()">X</button>
+                <ul class="nav-links">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Index -->
+        <section id="index">
+            <div class="service-card">
+                <h2>Welcome to The Maple Leaf Market</h2>
+                <img src="Photos/product1.jpeg" class="main-photo" alt="Products">
+                <div class="service-text">
+                   <p>Discover the flavors of Canada! Our selection features pure Canadian maple syrup, crunchy Montreal-style bagels, and savory smoked salmon from British Columbia.</p>
+                </div>
+                <p>$ 30</p>
+                <img src="Photos/product2.jpeg" class="main-photo" alt="Products">
+                <div class="service-text">
+                    <p>Taste the Great White North! Our assortment includes rich Canadian butter tarts, decadent Nanaimo bars, and refreshing ice wine from Ontario's vineyards</p>
+                </div>
+                <p>$20</p>
+             </div>
+
+        </section>
+        
+        <!-- About -->
+        <section id="about">
+            <div class="service-card">
+                <div class="service-text">
+                    <h2>About</h2>
+                    <p>Welcome to The Maple Leaf Market, your go-to destination for high-quality, locally sourced products. Our mission is to provide our customers with fresh, sustainable, and ethically sourced goods while supporting local farmers, artisans, and businesses.</p>
+                    <br><br>
+                </div>
+             </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="service-card">
+                <!-- Contact Details -->
+                <div class="contact-form">
+                    <h2>Contact</h2>
+                    <p><strong>Phone:</strong> <a href="tel:7095555555">709-555-5555</a></p>
+                    <p><strong>Address:</strong> 7 Rickets Rd., St. John’s, NL, Canada</p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d566.0510627530995!2d-52.7244440708002!3d47.55596144503563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca37290699d9f%3A0xfaacb2f86edbed05!2sAMAL%20Unite%20%26%20Empower%20(AUE)!5e0!3m2!1sen!2sca!4v1738859477422!5m2!1sen!2sca" 
+                        width="400" height="250" style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="#" method="POST" onsubmit="return validateForm()" novalidate>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="phone">Phone Number (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+        
+                        <label for="question">Question</label>
+                        <textarea id="question" name="question" rows="4" required></textarea>
+        
+                        <button type="submit">Send</button>
+                    </form>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: social network icons -->
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
