@@ -295,7 +295,7 @@ footer {
   /* Navigation Bar for mobiles */
   .menu-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -322,7 +322,8 @@ footer {
     display: block;
     padding-left: 0;
     margin: 0;
-    text-align: left;
+    flex-grow: 0;  /* Evita que el logo crezca */
+    flex-shrink: 0; /* Evita que el logo se encoja */
   }
 
   .menu-active {
@@ -443,7 +444,7 @@ footer {
 
   .menu-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -470,7 +471,8 @@ footer {
     display: block;
     padding-left: 0;
     margin: 0;
-    text-align: left;
+    flex-grow: 0;  /* Evita que el logo crezca */
+    flex-shrink: 0; /* Evita que el logo se encoja */
   }
 
   .menu-active {
