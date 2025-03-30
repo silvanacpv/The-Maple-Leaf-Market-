@@ -320,7 +320,7 @@ footer {
     font-weight: bold;
     color: var(--pink);
     display: block;
-    padding: 0px;
+    padding-left: 0;
   }
 
   .menu-active {
@@ -466,7 +466,7 @@ footer {
     font-weight: bold;
     color: var(--pink);
     display: block;
-    padding: 0px;
+    padding-left: 0;
   }
 
   .menu-active {
